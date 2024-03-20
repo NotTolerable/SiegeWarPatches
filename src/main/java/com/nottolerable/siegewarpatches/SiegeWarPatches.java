@@ -25,13 +25,13 @@ public final class SiegeWarPatches extends JavaPlugin implements Listener {
                 System.out.println("SiegeWarPatches by NotTolerable has unloaded properly!");
         }
 
-        @EventHandler
+        @EventHandler // Water Bucket Block Glitch Prevention
         public void onPlayerPlace(BlockPlaceEvent event) {
                 Player player = event.getPlayer();
                 if (SiegeWarSettings.getWarSiegeEnabled()) {
                         if (SiegeWarDistanceUtil.isLocationInActiveSiegeZone(player.getLocation())) {
                                 if (event.getBlockPlaced().isLiquid()) {
-                                        player.setWalkSpeed(0);
+                                        player.setWalkSpeed(0); // Stun Effect
                                         player.setFlySpeed(0);
 
                                         new BukkitRunnable() {
@@ -44,6 +44,7 @@ public final class SiegeWarPatches extends JavaPlugin implements Listener {
                                 } else {
                                         System.out.println("Water Bucket Checks Cleared Successfully!");
                         }
+                }
                 }
         }
 }

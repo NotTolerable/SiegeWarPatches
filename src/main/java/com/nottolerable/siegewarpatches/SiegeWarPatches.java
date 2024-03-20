@@ -29,7 +29,7 @@ public final class SiegeWarPatches extends JavaPlugin implements Listener {
         public void onPlayerPlace(BlockPlaceEvent event) {
                 Player player = event.getPlayer();
                 if (SiegeWarSettings.getWarSiegeEnabled()) {
-                        if (SiegeWarDistanceUtil.isLocationInActiveSiegeZone(player.getLocation()) = true) {
+                        if (boolean SiegeWarDistanceUtil.isLocationInActiveSiegeZone(player.getLocation()) = true) {
                                 if (event.getBlockPlaced().isLiquid()) {
                                         player.setWalkSpeed(0); // Stun Effect
                                         player.setFlySpeed(0);

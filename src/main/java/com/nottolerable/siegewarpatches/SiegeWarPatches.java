@@ -26,10 +26,10 @@ public final class SiegeWarPatches extends JavaPlugin implements Listener {
         }
 
         @EventHandler // Water Bucket Block Glitch Prevention
-        public void onPlayerPlace(BlockPlaceEvent event) {
+        public void onPlayerPlace(BlockEvent event) {
                 Player player = event.getPlayer();
                 if (SiegeWarSettings.getWarSiegeEnabled()) {
-                        if (SiegeWarDistanceUtil.isLocationInActiveSiegeZone(player.getLocation())) {
+                        if (SiegeWarDistanceUtil.isLocationInActiveSiegeZone(player.getLocation()) = true) {
                                 if (event.getBlockPlaced().isLiquid()) {
                                         player.setWalkSpeed(0); // Stun Effect
                                         player.setFlySpeed(0);

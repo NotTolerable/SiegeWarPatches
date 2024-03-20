@@ -14,7 +14,7 @@ public final class SiegeWarPatches extends JavaPlugin implements Listener {
         @Override
         public void onEnable() {
                 // Plugin startup logic
-                System.out.println("SiegeWarPatches by NotTolerable has loaded properly!");
+                System.out.println("[SiegeWarPatches] SiegeWarPatches by NotTolerable has loaded properly!");
 
                 getServer().getPluginManager().registerEvents(this, this);
         }
@@ -22,7 +22,7 @@ public final class SiegeWarPatches extends JavaPlugin implements Listener {
         @Override
         public void onDisable() {
                 // Plugin shutdown logic
-                System.out.println("SiegeWarPatches by NotTolerable has unloaded properly!");
+                System.out.println("[SiegeWarPatches] SiegeWarPatches by NotTolerable has unloaded properly!");
         }
 
         @EventHandler // Water Bucket Block Glitch Prevention
@@ -42,7 +42,7 @@ public final class SiegeWarPatches extends JavaPlugin implements Listener {
                                                 }
                                         }.runTaskLater(this, 5);
                                 } else {
-                                        System.out.println("Water Bucket Checks Cleared Successfully!");
+                                        System.out.println("[SiegeWarPatches] Water Bucket Checks Cleared Successfully!");
                         }
                 }
                 }

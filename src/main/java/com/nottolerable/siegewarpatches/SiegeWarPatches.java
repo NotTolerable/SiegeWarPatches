@@ -42,7 +42,7 @@ public final class SiegeWarPatches extends JavaPlugin implements Listener {
                                                 }
                                         }.runTaskLater(this, 5);
                                 } else {
-                                        System.out.println("[SiegeWarPatches] Water Bucket Checks Cleared Successfully!");
+                                        System.out.println("[SiegeWarPatches] Debug - Water bucket place checks cleared successfullye");
                         }
                 }
                 }

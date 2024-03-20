@@ -1,0 +1,4 @@
+name: SiegeWarPatches
+version: '1.0-SNAPSHOT'
+main: com.nottolerable.siegewarpatches.SiegeWarPatches
+api-version: '1.19'

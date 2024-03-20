@@ -26,7 +26,7 @@ public final class SiegeWarPatches extends JavaPlugin implements Listener {
         }
 
         @EventHandler // Water Bucket Block Glitch Prevention
-        public void onPlayerPlace(BlockEvent event) {
+        public void onPlayerPlace(BlockPlaceEvent event) {
                 Player player = event.getPlayer();
                 if (SiegeWarSettings.getWarSiegeEnabled()) {
                         if (SiegeWarDistanceUtil.isLocationInActiveSiegeZone(player.getLocation()) = true) {
